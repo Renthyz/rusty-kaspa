@@ -178,7 +178,9 @@ faster-hex = "0.9.0"
 fixedstr = { version = "0.5.4", features = ["serde"] }
 flate2 = "1.0.28"
 futures = { version = "0.3.29" }
-futures-util = { version = "0.3.29", default-features = false, features = ["alloc"] }
+futures-util = { version = "0.3.29", default-features = false, features = [
+    "alloc",
+] }
 getrandom = { version = "0.2.10", features = ["js"] }
 h2 = "0.4.6"
 # h2 = "0.3.21"
@@ -252,7 +254,11 @@ thiserror = "1.0.50"
 tokio = { version = "1.33.0", features = ["sync", "rt-multi-thread"] }
 tokio-stream = "0.1.14"
 toml = "0.8.8"
-tonic = { version = "0.12.3", features = ["tls-webpki-roots", "gzip", "transport"] }
+tonic = { version = "0.12.3", features = [
+    "tls-webpki-roots",
+    "gzip",
+    "transport",
+] }
 tonic-build = { version = "0.12.3", features = ["prost"] }
 triggered = "0.1.2"
 uuid = { version = "1.5.0", features = ["v4", "fast-rng", "serde"] }
@@ -261,7 +267,7 @@ wasm-bindgen-futures = "0.4.43"
 wasm-bindgen-test = "0.3.43"
 web-sys = "0.3.70"
 xxhash-rust = { version = "0.8.7", features = ["xxh3"] }
-zeroize = { version = "1.6.0", default-features = false, features = ["alloc"] }
+zeroize = { version = "1.3.0", default-features = false, features = ["alloc"] }
 pin-project-lite = "0.2.13"
 tower-http = { version = "0.5.2", features = [
     "map-response-body",
@@ -281,11 +287,18 @@ rustls = { version = "0.23", default-features = false, features = ["ring"] }
 workflow-core = { version = "0.18.0" }
 workflow-d3 = { version = "0.18.0" }
 workflow-dom = { version = "0.18.0" }
-workflow-http = { version = "0.18.0", default-features = false, features = ["rustls-tls-webpki-roots", "http2", "charset", "macos-system-configuration"] }
+workflow-http = { version = "0.18.0", default-features = false, features = [
+    "rustls-tls-webpki-roots",
+    "http2",
+    "charset",
+    "macos-system-configuration",
+] }
 workflow-log = { version = "0.18.0" }
 workflow-node = { version = "0.18.0" }
 workflow-nw = { version = "0.18.0" }
-workflow-rpc = { version = "0.18.0", default-features = false, features = ["rustls-tls-webpki-roots"] }
+workflow-rpc = { version = "0.18.0", default-features = false, features = [
+    "rustls-tls-webpki-roots",
+] }
 workflow-serializer = { version = "0.18.0" }
 workflow-store = { version = "0.18.0" }
 workflow-terminal = { version = "0.18.0" }
