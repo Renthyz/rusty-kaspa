@@ -7101,3 +7101,8 @@ dependencies = [
 name = "aes-gcm-siv"
 version = "0.10.3"
 source = "git+https://github.com/RustCrypto/AEADs?rev=6105d7a5591aefa646a95d12b5e8d3f55a9214ef#6105d7a5591aefa646a95d12b5e8d3f55a9214ef"
+
+[[patch.unused]]
+name = "curve25519-dalek"
+version = "3.2.1"
+source = "git+https://github.com/solana-labs/curve25519-dalek.git?rev=b500cdc2a920cd5bff9e2dd974d7b97349d61464#b500cdc2a920cd5bff9e2dd974d7b97349d61464"

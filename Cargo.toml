@@ -338,9 +338,14 @@ workflow-wasm = { version = "0.18.0" }
 # https://github.com/aspectron/nw-sys
 # nw-sys = { path = "../nw-sys" }
 
+
 [patch.crates-io.aes-gcm-siv]
 git = "https://github.com/RustCrypto/AEADs"
 rev = "6105d7a5591aefa646a95d12b5e8d3f55a9214ef"
+
+[patch.crates-io.curve25519-dalek]
+git = "https://github.com/solana-labs/curve25519-dalek.git"
+rev = "b500cdc2a920cd5bff9e2dd974d7b97349d61464"
 
 
 [profile.release]
